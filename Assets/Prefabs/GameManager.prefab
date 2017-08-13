@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1935926196880462}
+  m_IsPrefabParent: 1
+--- !u!1 &1935926196880462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4306523225480464}
+  - component: {fileID: 114906444631484608}
+  - component: {fileID: 114180168057780402}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4306523225480464
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1935926196880462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114180168057780402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1935926196880462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc64cfbfdf70054aa61635a30f51366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 8
+  rows: 8
+  wallCount:
+    minimum: 5
+    maximum: 9
+  foodCount:
+    minimum: 1
+    maximum: 5
+  exit: {fileID: 1357252089422252, guid: 9836e00ba652908409d3bfbd19fd8600, type: 2}
+  floorTiles:
+  - {fileID: 1630259049909732, guid: 19c78528b82936f45b8d4cd2658d15c3, type: 2}
+  - {fileID: 1829126155208664, guid: 124600b9a415acb498039f8c50bda9b0, type: 2}
+  - {fileID: 1198046604061002, guid: 7806b96f95a87f948ab205d88cee352e, type: 2}
+  - {fileID: 1844026240123742, guid: 1f20fbd985d9b3444b07a9780d54e3f6, type: 2}
+  - {fileID: 1139767049995830, guid: 2051e756baf1e7145b82b8df18aed4f2, type: 2}
+  - {fileID: 1217627208498402, guid: 1fcf0ed16deacc54bbbecb5b5228636f, type: 2}
+  - {fileID: 1456106158185492, guid: cf885c008386dbb4aa694f21b8bfd222, type: 2}
+  - {fileID: 1747085318398340, guid: 92b1fab3025999f46ab1afe262ed7730, type: 2}
+  wallTiles:
+  - {fileID: 1910028686464588, guid: 1272a9479ba901c4a81f613e4fc72066, type: 2}
+  - {fileID: 1755708578352036, guid: 720e62a625404124ca23222eedd8cc73, type: 2}
+  - {fileID: 1999498301043102, guid: acdbd6607dafab3408b664bf15b68863, type: 2}
+  - {fileID: 1993165282211732, guid: 38011031866633343ae9971cdd71928e, type: 2}
+  - {fileID: 1315317199707260, guid: 032a85dbeab60d44ea6fad0707c9ecc0, type: 2}
+  - {fileID: 1842683044594624, guid: f87ce2838cded8e46adf001cd0cf6bf1, type: 2}
+  - {fileID: 1031196994976290, guid: 38f962c6613569f4990505691965c913, type: 2}
+  - {fileID: 1731029864055340, guid: 5d9027b57be2f8b4d9500921031af593, type: 2}
+  enemyTiles:
+  - {fileID: 1881941580502722, guid: 86ecc10e6c7df5443b4b0708a2e5ce73, type: 2}
+  - {fileID: 1775133110332358, guid: 4f3c9a8ac0c62d94eb24a4ae9f11ae6f, type: 2}
+  foodTiles:
+  - {fileID: 1909601217785198, guid: 63e496baa90463d42a7a395369919961, type: 2}
+  - {fileID: 1602394888261164, guid: 009598b084f78a54eb7e12f0239e7a35, type: 2}
+  outerWallTiles:
+  - {fileID: 1197309487074482, guid: c7494399f8ea8714f9b5cc615399a035, type: 2}
+  - {fileID: 1396049735845168, guid: 6c9b630d482f8704eaaec5ebf5da824a, type: 2}
+  - {fileID: 1415109609315372, guid: 491a27fc6ffb2ef47aa5ac38e579b81c, type: 2}
+--- !u!114 &114906444631484608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1935926196880462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635d40cfd0e05914c8fa03f440dd747d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStartDelay: 2
+  turnDelay: 0.1
+  playerFoodPoints: 100
+  boardScript: {fileID: 0}
+  playersTurn: 1
